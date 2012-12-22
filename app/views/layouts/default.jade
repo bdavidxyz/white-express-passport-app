@@ -7,9 +7,12 @@ html
   //-BODY DEFINITION
   body
     include ../includes/header
-    block body
-      block main
-      block content
+    
+    //-container is a twitter-bootstrap selector, ensuring here the block "body" will display nicely in the middle
+    .container
+      block body
+        block main
+        block content
       
   //-FOOT DEFINITION
   include ../includes/foot
