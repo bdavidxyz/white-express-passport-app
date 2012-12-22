@@ -1,0 +1,9 @@
+extends ../layouts/default
+
+block main
+  h1 Articles
+
+block content
+  each article in articles
+    .article
+      a.title #{article.title}
