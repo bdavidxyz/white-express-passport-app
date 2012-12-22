@@ -19,5 +19,6 @@
     , "underscore": "latest"
     , "async": "latest"
     , "nodemon": "latest"
+    , "stylus": "latest"
   }
 }

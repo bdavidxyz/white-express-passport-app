@@ -3,15 +3,11 @@ header#header
   .navbar.navbar-fixed-top(role='navigation')
     .navbar-inner
       .container
-        a.brand(href='/') Node.js Express Mongoose Demo
+        a.brand(href='/') Node.js Express TwitterBootstrap Passport Demo
         .nav-collapse.collapse
           ul.nav
             li
               a(href='/articles', title="article listing") Articles
-            li
-              a(href="/articles/new", title="new article") New
-            li
-              a(href="https://github.com/madhums/nodejs-express-mongoose-demo", title="fork me on github") FORK ME ON GITHUB
           ul.nav.pull-right
             if (req.isAuthenticated())
               li

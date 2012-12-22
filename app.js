@@ -10,7 +10,7 @@ var express = require('express')
 // Load configurations
 var env = process.env.NODE_ENV || 'development'
   , config = require('./config/config')[env]
-  , auth = require('./authorization')
+  , auth = require('./config/authorization')
 
 // Bootstrap db connection
 var mongoose = require('mongoose')
@@ -27,8 +27,11 @@ model_files.forEach(function (file) {
 // bootstrap passport config
 require('./config/passport').boot(passport, config)
 
-var app = express()                                       // express app
-require('./settings').boot(app, config, passport)         // Bootstrap application settings
+// express app
+var app = express() 
+      
+// Bootstrap application settings                                
+require('./config/bootstrapsettings').boot(app, config, passport, __dirname)         
 
 // Bootstrap routes
 require('./config/routes')(app, passport, auth)
