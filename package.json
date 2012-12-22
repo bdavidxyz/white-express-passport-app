@@ -1,0 +1,31 @@
+{
+    "name": "noobjs"
+  , "description": "A demo app in nodejs illustrating use of express, jade and mogoose"
+  , "version": "1.0.0"
+  , "private": false
+  , "author": "David Bo (dapopa@gmail.com)"
+  , "engines": {
+        "node": "0.8.15"
+      , "npm": "1.1.68"
+    }
+  , "scripts": {
+      "start": "./node_modules/.bin/nodemon server.js"
+    }
+  , "dependencies": {
+      "express": "latest"
+    , "express-namespace": "latest"
+    , "jade": "latest"
+    , "mongoose": "latest"
+    , "connect-mongodb": "latest"
+    , "passport": "latest"
+    , "passport-local": "latest"
+    , "passport-facebook": "latest"
+    , "passport-twitter": "latest"
+    , "passport-github": "latest"
+    , "passport-google-oauth": "latest"
+    , "imager": "latest"
+    , "underscore": "latest"
+    , "async": "latest"
+    , "nodemon": "latest"
+  }
+}
