@@ -6,7 +6,7 @@ White application with boilerplate code for login + logout process with express 
 This application can be use as a simple example of : 
 
 - How to have a nice directory structure with expressJS
-- How to do simple login/logout process with passport, but simply extendable with facebook/google/etc authentication.
+- How to do simple login/logout process with passportJS, but simply extendable with facebook/google/etc authentication.
 
 It was first forked  from https://github.com/madhums/nodejs-express-mongoose-demo.git
 
@@ -19,4 +19,19 @@ However, lot of code has been  lean-ified (i.e. removed) in order to have only t
   $ git clone git://github.com/davidb583/white-express-passport-app.git
   $ npm install
   $ node app
+```
+
+
+## Directory structure
+```
+-app/
+  |__controllers/
+  |__models/
+  |__views/
+-config/
+  |__routes.js 
+  |__config.js (defines variable related to dev/test/prod)
+  |__bootstrapsettings.js
+  |__authorization.js
+  |__passport.js (auth config)
 ```
